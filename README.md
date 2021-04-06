@@ -1,9 +1,13 @@
 ### zappa app guide
 
-[Zappa](https://github.com/zappa/Zappa) - AWS serverless lambda function framework
+[Zappa](https://github.com/zappa/Zappa) - Deploy a Serverless Web App on AWS Lambda with Zappa 
+
+![Zappa](zappa.png)
 
 #### Security Policy for `IAM` Group
-
+1. Create Group,
+2. Create user and add the user to created group
+3. Create policy with below json & attach the policy to the user/group.
 ```{
     "Version": "2012-10-17",
     "Statement": [
@@ -102,6 +106,10 @@ pip install -r requirements.txt
 
 ```
 ### To run
+
+#### Run Locally
+
+    flask run
 
 #### AWS credentials
 
