@@ -1,6 +1,6 @@
 ### zappa app guide
 
-Zappa - AWS serverless lambda function framework
+[Zappa](https://github.com/zappa/Zappa) - AWS serverless lambda function framework
 
 #### Security Policy for `IAM` Group
 
@@ -93,7 +93,14 @@ Zappa - AWS serverless lambda function framework
 
 
 ```
+### Set Up & Install dependencies 
 
+```
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+```
 ### To run
 
 #### AWS credentials
