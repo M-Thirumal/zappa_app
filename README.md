@@ -131,17 +131,18 @@ aws_secret_access_key = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 #### Modify `zappa_setting.json`
 
 profile name comes from `.aws/credentials`. aws_region needs to be set, all others from zappa init are OK
-
+```
 {
     "dev": {
         "app_function": "app.app",
-        "profile_name": "default",
-        "project_name": "flask-zappa-tut",
-        "runtime": "python3.7",
-        "s3_bucket": "zappa-9cf4j0c1h",
-        "aws_region": "us-west-2"
+        "aws_region": "ca-central-1",
+        "profile_name": "zappa",
+        "project_name": "zappa-app",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-3svvqthav"
     }
 }
+```
 
 #### Deploy
     zappa deploy dev
